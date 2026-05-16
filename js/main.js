@@ -40,10 +40,13 @@ class Combatiente {
                         <div class="col-7">
                             <label class="small text-muted fw-bold">Modificadores</label>
                             <div class="input-group">
-                                <button class="btn btn-outline-secondary" onclick="ajustarEquipo('${this.id}', -2)">-2</button>
-                                <input type="number" class="form-control text-center fw-bold" value="${this.equipo}" readonly>
-                                <button class="btn btn-outline-secondary" onclick="ajustarEquipo('${this.id}', 2)">+2</button>
-                                <button class="btn btn-outline-secondary" onclick="ajustarEquipo('${this.id}', 5)">+5</button>
+                                <button class="btn btn-outline-secondary px-2" onclick="ajustarEquipo('${this.id}', -2)">-2</button>
+                                <button class="btn btn-outline-secondary px-2" onclick="ajustarEquipo('${this.id}', -1)">-1</button>
+                                
+                                <input type="number" class="form-control text-center fw-bold px-1" value="${this.equipo}" readonly>
+                                
+                                <button class="btn btn-outline-secondary px-2" onclick="ajustarEquipo('${this.id}', 1)">+1</button>
+                                <button class="btn btn-outline-secondary px-2" onclick="ajustarEquipo('${this.id}', 2)">+2</button>
                             </div>
                         </div>
                     </div>
@@ -60,7 +63,7 @@ class Combatiente {
  */
 let jugadorPrincipal = new Combatiente('j1', 'Tu Personaje', 'success'); // El jugador principal siempre está presente
 let ayudante = null; // Inicialmente no hay ayudante
-let monstruos = [new Combatiente('m1', 'Monstruo Principal', '#dc3545')]; // Comenzamos con un monstruo
+let monstruos = [new Combatiente('m1', 'Monstruo Principal', 'danger')]; // Comenzamos con un monstruo
 
 /**
  * ==========================================
