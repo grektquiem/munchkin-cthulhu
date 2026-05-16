@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Munchkin Cthulhu Para Weones</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-light">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-success" href="#">🦑 Weonchkin Cthulhu</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#seccion-maldiciones">Maldiciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#seccion-cultistas">Sectarios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#simulador">Simulador</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        
+        <header class="text-center mb-5">
+            <h1 class="display-5 fw-bold"></h1>
+            <p class="lead">LOCURAAAAA.</p>
+        </header>
+
+        <section id="seccion-inicio-acciones" class="mb-5">
+            <div class="row g-4">
+                
+                <div class="col-lg-5">
+                    <div class="card h-100 border-dark shadow-sm">
+                        <div class="card-header bg-dark text-white fw-bold">
+                            <i class="bi bi-person-vcard"></i> Inicio y Personaje
+                        </div>
+                        <div class="card-body small">
+                            <h6 class="fw-bold text-secondary border-bottom pb-1">1. Preparación del Mazo</h6>
+                            <ul>
+                                <li class="mb-1">Divide las cartas en el mazo de Puerta (Door) y el mazo de Tesoro (Treasure) y baraja ambos.</li>
+                                <li>Reparte cuatro cartas de cada mazo a cada jugador.</li>
+                            </ul>
+                            
+                            <h6 class="fw-bold text-secondary border-bottom pb-1 mt-3">2. Tu Personaje Inicial</h6>
+                            <ul>
+                                <li class="mb-1">Todos comienzan como un personaje de Nivel 1 sin clase.</li>
+                                <li>Revisa tus 8 cartas iniciales. Puedes bajar a la mesa (jugar en frente tuyo) una carta de Clase y cualquier Objeto utilizable que tengas.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="card h-100 border-secondary shadow-sm">
+                        <div class="card-header bg-secondary text-white fw-bold">
+                            <i class="bi bi-clock-history"></i> ¿Cuándo puedo hacer qué?
+                        </div>
+                        <div class="card-body p-0 small">
+                            <ul class="list-group list-group-flush">
+                                
+                                <li class="list-group-item list-group-item-success">
+                                    <h6 class="fw-bold text-secondary mb-1"><i class="bi bi-check-circle-fill"></i> En CUALQUIER momento:</h6>
+                                    <ul class="mb-0">
+                                        <li>Descartar una Clase (excepto la clase Sectario).</li>
+                                        <li>Jugar una carta de "Subir un Nivel".</li>
+                                        <li>Jugar una carta de Maldición.</li>
+                                    </ul>
+                                </li>
+
+                                <li class="list-group-item list-group-item-warning">
+                                    <h6 class="fw-bold text-secondary mb-1"><i class="bi bi-exclamation-circle-fill"></i> En cualquier momento (NO en combate):</h6>
+                                    <ul class="mb-0">
+                                        <li>Intercambiar un Objeto con otro jugador.</li>
+                                        <li>Cambiar qué Objetos tienes equipados.</li>
+                                        <li>Jugar una carta que acabas de recibir.</li>
+                                    </ul>
+                                </li>
+
+                                <li class="list-group-item list-group-item-primary">
+                                    <h6 class="fw-bold text-secondary mb-1"><i class="bi bi-person-fill"></i> Solo durante TU turno:</h6>
+                                    <ul class="mb-0">
+                                        <li>Jugar una nueva carta de Clase.</li>
+                                        <li>Vender Objetos para subir de nivel (excepto si estás en combate).</li>
+                                        <li>Jugar un Objeto (la mayoría no pueden jugarse en combate).</li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="seccion-maldiciones" class="mb-5">
+            <div class="card border-warning shadow-sm">
+                <div class="card-header bg-warning text-dark fw-bold">
+                    <i class="bi bi-exclamation-triangle-fill"></i> Manual de Maldiciones
+                </div>
+                <div class="card-body small">
+                    <div class="row g-4">
+                        <div class="col-md-6 border-end-md">
+                            <h6 class="fw-bold text-secondary">Uso y Reactividad</h6>
+                            <ul class="mb-0">
+                                <li class="mb-1">Si la sacas boca arriba al Abrir la Puerta, aplica a quien la sacó inmediatamente.</li>
+                                <li class="mb-1">Si la obtienes de otra forma, va a tu mano y puede jugarse sobre cualquier jugador en cualquier momento.</li>
+                                <li>Si te juegan una maldición de "tu próximo combate" mientras estás en combate, ¡cuenta en ese combate!.</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="fw-bold text-secondary">Reglas Críticas</h6>
+                            <ul class="mb-0">
+                                <li class="mb-1">Las cartas de Maldición que guardas como recordatorio no pueden descartarse para activar habilidades de Clase.</li>
+                                <li>Si una Maldición aplica a algo que no tienes, ignórala.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="seccion-cultistas" class="mb-5">
+            <div class="card border-success shadow-sm">
+                <div class="card-header bg-success text-white fw-bold">
+                    <i class="bi bi-book-half"></i> El Libro de los Cultistas
+                </div>
+                <div class="card-body small">
+                    <div class="row g-4">
+                        <div class="col-md-4 border-end-md">
+                            <h6 class="fw-bold text-secondary">Restricciones de Clase</h6>
+                            <ul class="mb-0">
+                                <li class="mb-1">No puedes descartar esta clase voluntariamente.</li>
+                                <li class="mb-1">Las cartas de clase Sectario tienen su propia pila de descarte.</li>
+                                <li>Si una carta te dice "Conviértete en Sectario" y hay una carta en su descarte, debes tomarla.</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 border-end-md">
+                            <h6 class="fw-bold text-secondary">Protección Sectaria</h6>
+                            <ul class="mb-0">
+                                <li>Si solo hay UN Sectario, nada puede hacerle perder su clase excepto una Intervención Divina.</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h6 class="fw-bold text-secondary">Condiciones de Victoria Especiales</h6>
+                            <ul class="mb-0">
+                                <li class="mb-1">Si todos los jugadores se vuelven Sectarios menos uno, el jugador no Sectario gana un nivel.</li>
+                                <li>Si TODOS los jugadores se vuelven Sectarios, el juego termina inmediatamente y la victoria es para el de mayor Nivel.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="simulador" class="mb-5">
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h3 class="text-success h4 mb-0">🛡️ Bando Jugadores</h3>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="switchAyudante">
+                            <label class="form-check-label small fw-bold" for="switchAyudante">Pedir Ayuda</label>
+                        </div>
+                    </div>
+                    <div id="contenedor-jugadores">
+                        </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h3 class="text-danger h4 mb-0">👾 Bando Monstruos</h3>
+                        <button class="btn btn-sm btn-danger fw-bold" id="btnAnadirMonstruo">
+                            <i class="bi bi-plus-lg"></i> Monstruo Errante
+                        </button>
+                    </div>
+                    <div id="contenedor-monstruos">
+                        </div>
+                </div>
+            </div>
+
+            <div class="sticky-bottom bg-white p-3 shadow-lg border mt-4 rounded">
+                <div class="row text-center align-items-center">
+                    <div class="col-4 border-end">
+                        <small class="text-uppercase fw-bold" style="font-size: 0.7rem;">Fuerza Jugadores</small>
+                        <div id="total-fuerza-jugadores" class="display-6 fw-bold text-success">1</div>
+                    </div>
+                    <div class="col-4">
+                        <div id="status-combate" class="badge p-2 fs-6 w-100 bg-success shadow-sm">Calculando...</div>
+                    </div>
+                    <div class="col-4 border-start">
+                        <small class="text-uppercase fw-bold" style="font-size: 0.7rem;">Fuerza Monstruos</small>
+                        <div id="total-fuerza-monstruos" class="display-6 fw-bold text-danger">1</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

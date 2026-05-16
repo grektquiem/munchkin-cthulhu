@@ -1,0 +1,117 @@
+/* 1. IMPORTACIÓN DE FUENTES (Google Fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Jura:wght@400;700&display=swap');
+
+/* 2. VARIABLES GLOBALES DE CSS (El estándar de la industria para temas) */
+:root {
+    --abyssal-black: #0b101c;
+    --deep-ocean: #11222c;
+    --swamp-green: #3e1243;
+    --eldritch-glow: #b3b7b4;
+    --madness-purple: #4a154b;
+    --text-muted: #8b9dad;
+    --text-bright: #e2f1ea;
+}
+
+/* 3. RESETEO DE FONDOS Y TIPOGRAFÍA BASE */
+body {
+    background-color: var(--abyssal-black) !important;
+    background-image: radial-gradient(circle at 50% 0%, var(--deep-ocean) 0%, var(--abyssal-black) 80%);
+    color: var(--text-bright) !important;
+    font-family: 'Jura', sans-serif;
+    min-height: 100vh;
+}
+
+/* 4. TIPOGRAFÍA TEMÁTICA PARA ENCABEZADOS */
+h1, h2, h3, .navbar-brand {
+    font-family: 'Creepster', cursive;
+    letter-spacing: 2px;
+}
+
+h1 {
+    color: var(--eldritch-glow) !important;
+    text-shadow: 0 0 10px rgba(82, 255, 115, 0.4), 0 0 20px rgba(82, 255, 115, 0.2);
+}
+
+/* 5. BARRA DE NAVEGACIÓN (Navbar) */
+.navbar {
+    background-color: var(--abyssal-black) !important;
+    border-bottom: 2px solid var(--swamp-green);
+    box-shadow: 0 4px 15px rgba(36, 59, 47, 0.7);
+}
+
+.navbar-brand {
+    color: var(--eldritch-glow) !important;
+    font-size: 1.8rem;
+}
+
+/* 6. SOBREESCRIBIR LAS TARJETAS (Cards) DE BOOTSTRAP */
+.card {
+    background-color: var(--deep-ocean) !important;
+    border: 1px solid var(--swamp-green) !important;
+    color: var(--text-bright);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto Hover interactivo */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(82, 255, 115, 0.15);
+    border-color: var(--eldritch-glow) !important;
+}
+
+/* Cabeceras de las tarjetas */
+.card-header {
+    background-color: var(--swamp-green) !important;
+    border-bottom: 1px solid rgba(82, 255, 115, 0.2) !important;
+    color: var(--eldritch-glow) !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* 7. ADAPTACIÓN DE ELEMENTOS INTERNOS (Listas y Formularios) */
+.list-group-item {
+    background-color: transparent !important;
+    color: var(--text-bright) !important;
+    border-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+.form-control, .form-select {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    border: 1px solid var(--swamp-green) !important;
+    color: var(--eldritch-glow) !important;
+}
+
+.form-control:focus, .form-select:focus {
+    background-color: var(--abyssal-black) !important;
+    border-color: var(--eldritch-glow) !important;
+    box-shadow: 0 0 10px rgba(82, 255, 115, 0.3) !important;
+    color: var(--eldritch-glow) !important;
+}
+
+/* 8. BOTONES TEMÁTICOS */
+.btn-success {
+    background-color: var(--swamp-green) !important;
+    border-color: var(--eldritch-glow) !important;
+    color: var(--eldritch-glow) !important;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn-success:hover {
+    background-color: var(--eldritch-glow) !important;
+    color: var(--abyssal-black) !important;
+    box-shadow: 0 0 15px rgba(82, 255, 115, 0.6);
+}
+
+.btn-danger {
+    background-color: var(--madness-purple) !important;
+    border-color: #ff4d4d !important;
+}
+
+/* 9. MARCADOR FIJO GLOBAL */
+.sticky-bottom {
+    background-color: var(--abyssal-black) !important;
+    border-top: 2px solid var(--eldritch-glow) !important;
+    box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.8) !important;
+}
